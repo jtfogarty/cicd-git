@@ -15,7 +15,7 @@ pnpm dlx svelte-add@latest tailwindcss
 
 #Using svelte-add setup tailwind for this project
 
-pnpm intsall
+pnpm install
 
 git add . && git commit -m "after installs" && git push origin main
 
@@ -40,11 +40,21 @@ pnpm run build
  ## Shadcn-svelte components
 
  ```bash
-  npx shadcn-svelte@latest add tabs
-  npx shadcn-svelte@latest add card
-  npx shadcn-svelte@latest add button
-  npx shadcn-svelte@latest add input
-  npx shadcn-svelte@latest add label
-  npx shadcn-svelte@latest add textarea
-  npx shadcn-svelte@latest add select
+  npx shadcn-svelte@latest add 
+ ```
+ ```bash
+ Components installed at:
+- src/lib/components/ui/alert-dialog
+- src/lib/components/ui/button
+- src/lib/components/ui/card
+- src/lib/components/ui/checkbox
+- src/lib/components/ui/context-menu
+- src/lib/components/ui/form
+- src/lib/components/ui/input
+- src/lib/components/ui/label
+- src/lib/components/ui/radio-group
+- src/lib/components/ui/select
+- src/lib/components/ui/switch
+- src/lib/components/ui/textarea
+- src/lib/components/ui/tabs
  ```
