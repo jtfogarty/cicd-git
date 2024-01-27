@@ -15,7 +15,7 @@ pnpm dlx svelte-add@latest tailwindcss
 
 #Using svelte-add setup tailwind for this project
 
-pnpm isntall
+pnpm intsall
 
 git add . && git commit -m "after installs" && git push origin main
 
