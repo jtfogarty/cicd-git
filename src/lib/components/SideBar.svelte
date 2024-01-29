@@ -5,15 +5,15 @@
         <img src="/icons/homeIcon.svg" class="h-6 w-6 " alt="">
         <span class="capitalize text-[12px]">home</span>
     </a>
-    <a href="/" class="flex py-2.5 hover:bg-[#1f2e3c] gap-2 items-center flex-col">
+    <a href="/ApplicationContext" class="flex py-2.5 hover:bg-[#1f2e3c] gap-2 items-center flex-col">
         <img src="/icons/puzzle.svg" class="h-6 w-6 " alt="">
         <span class="capitalize text-[12px] text-center w-full">Application<br>Context</span>
     </a>
-    <a href="/" class="flex py-2.5 hover:bg-[#1f2e3c] gap-2 items-center flex-col">
+    <a href="/DConf" class="flex py-2.5 hover:bg-[#1f2e3c] gap-2 items-center flex-col">
         <img src="/icons/component.svg" class="h-6 w-6 " alt="">
         <span class="capitalize text-[12px]">D Conf</span>
     </a>
-    <a href="/" class="flex py-2.5 hover:bg-[#1f2e3c] gap-2 items-center flex-col">
+    <a href="/NSG" class="flex py-2.5 hover:bg-[#1f2e3c] gap-2 items-center flex-col">
         <img src="/icons/waypoints.svg" class="h-6 w-6 " alt="">
         <span class="capitalize text-[12px]">NSG</span>
     </a>
