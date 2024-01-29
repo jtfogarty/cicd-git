@@ -1,6 +1,8 @@
 <script>
 	import Header from '$lib/components/Header.svelte';
-  import "../app.css";
+  import "../app.pcss";
 </script>
-  
+
   <Header/>
+
+  <slot />
