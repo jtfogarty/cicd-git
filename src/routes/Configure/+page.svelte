@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import * as Tabs from "$lib/components/ui/tabs";
-	import { Button } from "$lib/components/ui/button";
 	import GitLabPage from "$lib/components/tabs/GitLabPage.svelte"; // Assuming you have a GitLabPage component
 	import ApplicationContextPage from "$lib/components/tabs/ApplicationContextPage.svelte"; // Assuming you have an ApplicationContextPage component
 	import NSGPage from "$lib/components/tabs/NSGPage.svelte"; // Assuming you have an NSGPage component
@@ -41,7 +40,6 @@
 			<h2 class="text-lg font-bold">{tab.title}</h2>
 			<p>{tab.description}</p>
 			<svelte:component this={tab.component} />
-			<Button on:click={handleSubmit}>Save</Button>
 		  </div>
 		</Tabs.Content>
 	  {/if}
