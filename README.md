@@ -58,3 +58,8 @@ pnpm run build
 - src/lib/components/ui/textarea
 - src/lib/components/ui/tabs
  ```
+
+ ## Dexie js
+ ```bash
+ pnpm add dexie
+ ```

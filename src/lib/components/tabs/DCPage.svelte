@@ -8,7 +8,7 @@
    <Card.Content class="space-y-2 text-black">
 
     <div class="flex flex-col w-full max-w-sm gap-1.5">
-        <Label for="email">Please enter the URL of the Application Context Repository </Label>
+        <Label for="email">Please enter the URL of the d-conf component repository </Label>
         <Input type="url" id="url" placeholder="URL" />
       </div>
      </Card.Content>

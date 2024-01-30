@@ -5,13 +5,15 @@
 	import GitLabPage from "$lib/components/tabs/GitLabPage.svelte"; // Assuming you have a GitLabPage component
 	import ApplicationContextPage from "$lib/components/tabs/ApplicationContextPage.svelte"; // Assuming you have an ApplicationContextPage component
 	import NSGPage from "$lib/components/tabs/NSGPage.svelte"; // Assuming you have an NSGPage component
-  
+	import DCPage from "$lib/components/tabs/DCPage.svelte"; // Assuming you have an NSGPage component
+
 	let activeTab = 'GitLab'; // Default active tab
   
 	const tabs = [
 	  { id: "GitLab", title: "GitLab", description: "Configure connection to GitLab", component: GitLabPage },
 	  { id: "ApplicationContext", title: "Application Context", description: "Repository Location", component: ApplicationContextPage },
-	  { id: "NSG", title: "NSG", description: "Network Security Group Configuration", component: NSGPage }
+	  { id: "NSG", title: "NSG", description: "Network Security Group Configuration", component: NSGPage },
+	  { id: "DC", title: "D-Conf", description: "Dee Configuration", component: DCPage}
 	  // You can add or remove tabs, and the grid will adjust accordingly
 	];
   
@@ -39,8 +41,7 @@
 			<h2 class="text-lg font-bold">{tab.title}</h2>
 			<p>{tab.description}</p>
 			<svelte:component this={tab.component} />
-			<br>
-			<Button on:click={handleSubmit}>Submit</Button>
+			<Button on:click={handleSubmit}>Save</Button>
 		  </div>
 		</Tabs.Content>
 	  {/if}
