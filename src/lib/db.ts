@@ -37,7 +37,7 @@ export class MySubClassedDexie extends Dexie {
         gitlab: '++id, username, token', 
         nsg:'++id, url',
         appctx: '++id, main_url',
-        dconf: '++id, main-url, libs'
+        dconf: '++id, main_url, libs'
     });
   }
 }
