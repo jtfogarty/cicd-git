@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import * as Tabs from "$lib/components/ui/tabs";
-	import GitLabPage from "$lib/components/tabs/GitLabPage.svelte"; // Assuming you have a GitLabPage component
-	import ApplicationContextPage from "$lib/components/tabs/ApplicationContextPage.svelte"; // Assuming you have an ApplicationContextPage component
-	import NSGPage from "$lib/components/tabs/NSGPage.svelte"; // Assuming you have an NSGPage component
-	import DCPage from "$lib/components/tabs/DCPage.svelte"; // Assuming you have an NSGPage component
+	import GitLabPage from "$lib/components/tabs/GitLabPage.svelte"; 
+	import ApplicationContextPage from "$lib/components/tabs/ApplicationContextPage.svelte"; 
+	import NSGPage from "$lib/components/tabs/NSGPage.svelte"; 
+	import DCPage from "$lib/components/tabs/DCPage.svelte"; 
+	import Azure from "$lib/components/tabs/Azure.svelte"; 
 
 	let activeTab = 'GitLab'; // Default active tab
   
@@ -12,7 +13,8 @@
 	  { id: "GitLab", title: "GitLab", description: "Configure connection to GitLab", component: GitLabPage },
 	  { id: "ApplicationContext", title: "Application Context", description: "Repository Location", component: ApplicationContextPage },
 	  { id: "NSG", title: "NSG", description: "Network Security Group Configuration", component: NSGPage },
-	  { id: "DC", title: "D-Conf", description: "Dee Configuration", component: DCPage}
+	  { id: "DC", title: "D-Conf", description: "Dee Configuration", component: DCPage},
+	  { id: "Azure", title: "Azure", description: "Azure Connection Info", component: Azure}
 	  // You can add or remove tabs, and the grid will adjust accordingly
 	];
   

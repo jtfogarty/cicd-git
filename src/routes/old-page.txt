@@ -1,0 +1,46 @@
+<script lang="ts">
+    import { db } from '$lib/db'; // Ensure the correct path to db.js
+    import { onMount } from 'svelte';
+    import { fetchPipelineHistory } from '$lib/gitlabService';
+  
+    let pipelines: any[] = [];
+    let loading = true;
+    
+  
+    let error: string | null = null;
+
+  let username = '';
+  let token = '';
+    function isError(e: unknown): e is Error {
+    return e instanceof Error;
+    }
+
+    onMount(async () => {
+        const data = await db.gitlab.toArray();
+    if (data.length > 0) {
+      ({ username, token } = data[0]); // Assuming there's only one entry
+    }
+        try {
+        pipelines = await fetchPipelineHistory(username, token);
+      } catch (e) {
+        let errorMessage = 'An unexpected error occurred';
+        if (isError(e)) {
+            errorMessage = e.message;
+        }
+            error = errorMessage;
+        }
+    });
+  </script>
+  
+  {#if loading}
+    <p>Loading pipeline history...</p>
+  {:else if error}
+    <p>Error: {error}</p>
+  {:else}
+    <ul>
+      {#each pipelines as pipeline}
+        <li>Pipeline #{pipeline.id} - Status: {pipeline.status}</li>
+      {/each}
+    </ul>
+  {/if}
+  
