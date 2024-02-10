@@ -1,7 +1,8 @@
 <script>
     import GitLabProject from './GitLabProject.svelte';
   </script>
-  This will test the gitlab thing
 
+
+<div class="flex justify-center mt-6">
   <GitLabProject />
-  
+</div>
